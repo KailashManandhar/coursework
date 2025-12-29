@@ -7,6 +7,9 @@ nav {
   gap: 50px;
 }
 
+.unselected {
+  color: grey
+}
 
 .selected {
     
@@ -16,4 +19,12 @@ nav {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+#navigation {
+  width: 1000px;
+}
+
+body {
+  background-color: antiquewhite;
 }
