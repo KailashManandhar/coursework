@@ -2,7 +2,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: antiquewhite;
+  background-blend-mode: overlay;  
   padding: 10px 20px;
   gap: 50px;
 }
@@ -26,5 +26,11 @@ a {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: white;
+}
+.banner {
+  width: 100vw;   /* 100% of the viewport width */
+  height: 40vh;  /* 20% of the viewport height */
+  object-fit: cover; /* This prevents the image from looking stretched */
+  display: block;    /* Removes extra white space at the bottom */
 }
