@@ -23,10 +23,16 @@ a {
 
 #navigation {
   width: 1000px;
+  font-size: large;
+}
+
+#navigation td {
+  background-color: white;
+  padding: 10px;
 }
 
 body {
-  background-color: white;
+  background-color: rgb(200, 239, 200);
 }
 .banner {
   width: 100vw;   /* 100% of the viewport width */
@@ -35,22 +41,3 @@ body {
   display: block;    /* Removes extra white space at the bottom */
 }
 
-.products {
-  width: 100%;       /* Takes up the full width of its parent */
-  overflow-x: auto;
-}
-
-.products img {
-  height: 200px;
-  width: 320px;
-}
-
-.products table{
-   border-collapse: separate; /* must be separate for spacing to work */
-   border-spacing: 20px 0;
-}
-
-table {
-  width: 100%;       /* Optional: ensures table fills the container */
-  border-collapse: collapse;
-}
