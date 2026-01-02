@@ -6,6 +6,45 @@
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Document</title>
+    <style>
+        .product_name 
+        {
+            color :dimgray ;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+        }
+        .product_price
+        {
+            color: rgba(219, 96, 2, 0.993);
+            font-size: large;
+        }
+        .products {
+        width: 100%;      
+        overflow-x: auto;
+        }
+
+        .products img {
+            height: 200px;
+            width: 320px;
+        }
+
+        .products table{
+            border-collapse: separate; /* must be separate for spacing to work */
+            border-spacing: 30px 0;
+            
+
+        }
+
+        .products table td {
+            text-align: center;
+            background-color: white;
+        }
+
+        table {
+            width: 100%;       /* Optional: ensures table fills the container */
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,5 +56,72 @@
             <td><a href = "aboutus.html" class = "unselected"> About us</a></td>
         </table>
     </nav>
+    <div>
+        <img src="../assets/Gemini_Generated_Image_lqihw2lqihw2lqih.png" alt="banner" class = "banner">
+    </div>
+
+    <div class ="products">
+        <h2 class = "title" style="font-family: cursive; text-align: center;"> Foods </h2>
+        <table>
+            <tr> 
+                <td> <img src="../assets/brocli.jpg"></td> 
+                <td> <img src="../assets/carrot.jpg"></td>
+                <td> <img src="../assets/tomatoes.jpg"></td>
+                <td> <img src="../assets/onion.jpg"></td>
+                <td> <img src="../assets/raddish.jpg"></td>
+                <td> <img src="../assets/potato.jpg"></td>
+            </tr>
+            <tr class = "product_name">
+                <td> Brockli </td>
+                <td> Carrot</td>
+                <td> Tomato</td>
+                <td> Onion</td>
+                <td> Raddish</td>
+                <td> Potato</td>
+            </tr>
+            <tr class = "product_price">
+                <td> Rs 80/Kg </td>
+                <td> Rs 70/Kg </td>
+                <td> Rs 50/Kg </td>
+                <td> Rs 110/Kg </td>
+                <td> Rs 55/Kg </td>
+                <td> Rs 60/Kg </td>
+                
+            </tr>
+        </table>
+    </div>
+    <div class="products">
+        <table>
+            <h2 class = "title" style="font-family: cursive; text-align: center;"> Clothing </h2>
+            <tr> 
+                <td> <img src="../assets/kurtha.jpg" ></td> 
+                <td> <img src="../assets/topi.jpg"></td>
+                <td> <img src="../assets/pant.jpg"></td>
+                <td> <img src="../assets/daura.jpg"></td>
+                <td> <img src="../assets/shirt.jpg"></td>
+                <td> <img src="../assets/bag.jpg"></td>
+            </tr>
+            <tr class = "product_name">
+                <td> Kurtha </td>
+                <td> Dhaka Topi</td>
+                <td> Pants</td>
+                <td> Daura Shruwal</td>
+                <td> Shirt</td>
+                <td> Bags</td>
+            </tr>
+            <tr class = "product_price">
+                <td> Rs 1200 </td>
+                <td> Rs 100</td>
+                <td> Rs 700 </td>
+                <td> Rs 3000 </td>
+                <td> Rs 600 </td>
+                <td> Rs 900 </td>
+                
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <h3 style="text-align: center;"> Have any <a href="query.html" style="color: red;">Queries</a>, <a href="feedback.html" style="color: red;">feedback</a> or <a href="complaint.html" style="color: red;">complaint</a>?</h3>
+    </footer>
 </body>
 </html>
