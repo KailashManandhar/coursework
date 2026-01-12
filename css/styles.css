@@ -27,9 +27,6 @@ a {
 }
 
 
-body {
-  background-color: rgb(200, 239, 200);
-}
 .banner {
   width: 100vw;   /* 100% of the viewport width */
   height: 40vh;  /* 20% of the viewport height */
@@ -37,13 +34,13 @@ body {
   display: block;    /* Removes extra white space at the bottom */
 }
 
-/* aboutus
+
 
 /* -------------------- GENERAL -------------------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color:rgb(200, 239, 200);
+    background-color:rgb(240,240,240);
 }
 
 /* -------------------- TOP IMAGE -------------------- */
