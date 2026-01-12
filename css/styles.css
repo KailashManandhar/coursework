@@ -27,9 +27,6 @@ a {
 }
 
 
-body {
-  background-color: rgb(200, 239, 200);
-}
 .banner {
   width: 100vw;   /* 100% of the viewport width */
   height: 40vh;  /* 20% of the viewport height */
@@ -37,13 +34,13 @@ body {
   display: block;    /* Removes extra white space at the bottom */
 }
 
-/* aboutus
+
 
 /* -------------------- GENERAL -------------------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color:rgb(200, 239, 200);
+    background-color:rgb(240,240,240);
 }
 
 /* -------------------- TOP IMAGE -------------------- */
@@ -83,4 +80,127 @@ body {
 .box p {
     margin: 5px 0;
     font-size: 14px;
+}
+
+
+/*About us*/
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#navigation {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#navigation td {
+    padding: 0 15px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#navigation a:hover {
+    color: #b6f5c2;
+}
+
+.selected {
+    border-bottom: 2px solid #b6f5c2;
+}
+
+/* ================= HERO IMAGE ================= */
+#aboutUs_img {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+#aboutUs_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DARK OVERLAY */
+#aboutUs_img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* ================= HERO TEXT ================= */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* ================= MEMBERS SECTION ================= */
+.members {
+    padding: 60px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    background-color: #f4fff6;
+}
+
+/* MEMBER CARD */
+.box {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+}
+
+.box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background: #ddd;
+}
+
+.box p {
+    font-size: 15px;
+    margin: 6px 0;
 }

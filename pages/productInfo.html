@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> product: <span id ="productName"></span></p>
+    <p> Price: <span id ="productPrice"></span></p>
+    <img id = "image" src="" alt="">
+
+    <script>
+        const productName = localStorage.getItem('productName');
+        const productPrice = localStorage.getItem('productPrice');
+        document.getElementById('productName').textContent = productName;
+        document.getElementById('productPrice').textContent = productPrice;
+        
+        let image = document.getElementById("image");
+        image.src = "../assets/" + productName +".jpg";
+        image.alt = productName;
+    </script>
+    
+</body>
+</html>

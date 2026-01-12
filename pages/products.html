@@ -7,17 +7,7 @@
 
     <title>Document</title>
     <style>
-        .product_name 
-        {
-            color :dimgray ;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: x-large;
-        }
-        .product_price
-        {
-            color: rgba(219, 96, 2, 0.993);
-            font-size: large;
-        }
+        
         .products {
         width: 100%;      
         overflow-x: auto;
@@ -44,13 +34,66 @@
             width: 100%;       /* Optional: ensures table fills the container */
             border-collapse: collapse;
         }
+        .productsContainer
+        {
+            width: 225px;
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 40px;
+
+            transition: transform 0.3s ease;
+            
+        }
+
+        .productsContainer:hover {
+            transform: scale(1.1); /* grow 10% on hover */
+        }
+        
+        .productsContainer img
+        {
+            width: 180px;
+            height: 200px;
+            object-fit: cover; 
+            border-radius: 10px;
+            
+        }
+        .productsContainer .product_name 
+        {
+            color :dimgray ;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+        }
+        .productsContainer .product_price
+        {
+            color: rgba(219, 96, 2, 0.993);
+            font-size: large;
+        }
+        .products_slide
+        {
+            display:flex;
+            gap: 20px;
+            background-color: white;
+            margin-left:50px;
+            margin-right:50px;
+        }
+        .products_heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;              /* remove default spacing */
+                /* space between heading and products */
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <nav>
         <table id = "navigation">
             <td><a href =  "../index.html" class = "unselected"> Home</a></td>
-            <td><a href = "#"  class = "selected"> Products</a></td>
+            <td><a href = "productInfo.html"  class = "selected"> Products</a></td>
             <td><a href = "blog.html" class = "unselected"> Blogs</a></td>
             <td><a href = "research.html" class = "unselected"> Research</a></td>
             <td><a href = "aboutus.html" class = "unselected"> About us</a></td>
@@ -59,68 +102,121 @@
     <div>
         <img src="../assets/Gemini_Generated_Image_lqihw2lqihw2lqih.png" alt="banner" class = "banner">
     </div>
+    <p class="products_heading"> Clothing </p>
+    <div class="products_slide">
+        <div class = "productsContainer" ">
+            <a href = "productInfo.html">
+                <img src="../assets/bag.jpg" alt = "bag">
+                <p class = "product_name">bag</p>
+                <p class = "product_price"> Rs 500 </p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/shirt.jpg">
+                <p class = "product_name">shirt</p>
+                <p class = "product_price"> Rs 600</p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/topi.jpg" alt = "bag">
+                <p class = "product_name">topi </p>
+                <p class = "product_price"> Rs 50 </p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/daura.jpg">
+                <p class = "product_name">daura</p>
+                <p class = "product_price"> Rs 6000</p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/kurtha.jpg" alt = "bag">
+                <p class = "product_name">kurtha </p>
+                <p class = "product_price"> Rs 500 </p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/pant.jpg">
+                <p class = "product_name">pant</p>
+                <p class = "product_price"> Rs 600</p>
+            </a>
+        </div>
+    </div>
 
-    <div class ="products">
-        <h2 class = "title" style="font-family: cursive; text-align: center;"> Foods </h2>
-        <table>
-            <tr> 
-                <td> <img src="../assets/brocli.jpg"></td> 
-                <td> <img src="../assets/carrot.jpg"></td>
-                <td> <img src="../assets/tomatoes.jpg"></td>
-                <td> <img src="../assets/onion.jpg"></td>
-                <td> <img src="../assets/raddish.jpg"></td>
-                <td> <img src="../assets/potato.jpg"></td>
-            </tr>
-            <tr class = "product_name">
-                <td> Brockli </td>
-                <td> Carrot</td>
-                <td> Tomato</td>
-                <td> Onion</td>
-                <td> Raddish</td>
-                <td> Potato</td>
-            </tr>
-            <tr class = "product_price">
-                <td> Rs 80/Kg </td>
-                <td> Rs 70/Kg </td>
-                <td> Rs 50/Kg </td>
-                <td> Rs 110/Kg </td>
-                <td> Rs 55/Kg </td>
-                <td> Rs 60/Kg </td>
-                
-            </tr>
-        </table>
+    <p class="products_heading"> Food </p>
+    <div class="products_slide">
+        <div class = "productsContainer" >
+            <a href = "productInfo.html">
+                <img src="../assets/raddish.jpg" alt = "bag">
+                <p class = "product_name">raddish </p>
+                <p class = "product_price"> Rs 50 </p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/carrot.jpg">
+                <p class = "product_name">carrot</p>
+                <p class = "product_price"> Rs 60</p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/brocli.jpg" alt = "bag">
+                <p class = "product_name">brocli</p>
+                <p class = "product_price"> Rs 70 </p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/potato.jpg">
+                <p class = "product_name">potato</p>
+                <p class = "product_price"> Rs 100</p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/tomatoes.jpg" alt = "bag">
+                <p class = "product_name">tomatoes</p>
+                <p class = "product_price"> Rs 90 </p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html">
+                <img src="../assets/onion.jpg">
+                <p class = "product_name">onion</p>
+                <p class = "product_price"> Rs 200</p>
+            </a>
+        </div>
     </div>
-    <br><br><br>
-    <div class="products">
-        <table>
-            <h2 class = "title" style="font-family: cursive; text-align: center;"> Clothing </h2>
-            <tr> 
-                <td> <img src="../assets/kurtha.jpg" ></td> 
-                <td> <img src="../assets/topi.jpg"></td>
-                <td> <img src="../assets/pant.jpg"></td>
-                <td> <img src="../assets/daura.jpg"></td>
-                <td> <img src="../assets/shirt.jpg"></td>
-                <td> <img src="../assets/bag.jpg"></td>
-            </tr>
-            <tr class = "product_name">
-                <td> Kurtha </td>
-                <td> Dhaka Topi</td>
-                <td> Pants</td>
-                <td> Daura Shruwal</td>
-                <td> Shirt</td>
-                <td> Bags</td>
-            </tr>
-            <tr class = "product_price">
-                <td> Rs 1200 </td>
-                <td> Rs 100</td>
-                <td> Rs 700 </td>
-                <td> Rs 3000 </td>
-                <td> Rs 600 </td>
-                <td> Rs 900 </td>
-                
-            </tr>
-        </table>
-    </div>
+
+    <script>
+        // selecting all the classes with productContainer class
+        const containers = document.querySelectorAll('.productsContainer');
+
+        // looping through each container
+        containers.forEach(container => {
+
+            // listening if any of the container is being clicked
+            container.addEventListener("click",function(e){
+            const productName = container.querySelector(".product_name").textContent;
+            const producPrice = container.querySelector(".product_price").textContent;
+
+            localStorage.setItem("productName",productName);
+            localStorage.setItem("productPrice",producPrice);
+
+            window.location.href = "productInfo.html";
+        })
+        })
+
+        
+
+
+    </script>
     <footer>
         <h3 style="text-align: center;"> Have any <a href="query.html" style="color: red;">Queries</a>, <a href="feedback.html" style="color: red;">feedback</a> or <a href="complaint.html" style="color: red;">complaint</a>?</h3>
     </footer>
