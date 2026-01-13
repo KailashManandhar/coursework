@@ -84,41 +84,8 @@ body {
 
 
 /*About us*/
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-/* ================= NAVIGATION ================= */
-nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
 
-#navigation {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-}
-
-#navigation td {
-    padding: 0 15px;
-}
-
-#navigation a {
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-#navigation a:hover {
-    color: #b6f5c2;
-}
 
 .selected {
     border-bottom: 2px solid #b6f5c2;
