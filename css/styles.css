@@ -151,3 +151,107 @@ body {
     font-size: 15px;
     margin: 6px 0;
 }
+
+/* prabesh code */
+/* Reset some default styles */
+
+         header {
+            background: linear-gradient(to right, #2ecc71, #27ae60);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+
+        /* Hero Image */
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+       section {
+            display: grid;
+    /* This creates 2 equal columns. Items 3 and 4 will automatically move to the next row. */
+    grid-template-columns: repeat(2, 1fr); 
+    
+    gap: 80px; /* Space between the boxes vertically and horizontally */
+    padding: 50px 20px;
+    max-width: 1000px; /* Increased slightly to fit 2 boxes comfortably */
+    margin: auto;
+        }
+
+        .product-card {
+           width: 110%; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+            text-align:center;
+
+        }
+
+        .content h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color:darkslategray;
+        }
+
+        .content p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color:dimgray;
+        }
+
+        .content button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .content button:hover {
+            background-color: green;
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+       @media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr; 
+            }
+
+            .product-card {
+                max-width: 100%;
+            }
+        }
