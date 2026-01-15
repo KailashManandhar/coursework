@@ -1,3 +1,4 @@
+/* external css for navigation bar */
 nav {
   position: fixed;
   top: 0;
@@ -36,14 +37,14 @@ a {
 
 
 
-/* -------------------- GENERAL -------------------- */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color:rgb(240,240,240);
 }
 
-/* -------------------- TOP IMAGE -------------------- */
+
 .top {
     text-align: center; 
     margin-top: 50px;
@@ -113,27 +114,6 @@ body {
     background: rgba(0, 0, 0, 0.45);
 }
 
-/* ================= HERO TEXT ================= */
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 2;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    letter-spacing: 2px;
-}
-
-.hero-text p {
-    font-size: 18px;
-    margin-top: 8px;
-    opacity: 0.9;
-}
 
 /* ================= MEMBERS SECTION ================= */
 .members {
