@@ -6,9 +6,37 @@
     <link rel="stylesheet" href="../css/styles.css">
 
     <title>Document</title>
+    <style>
+        .researchContainer {
+             
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            margin-top: 15px;
+            margin-right: 300px;
+            
+            justify-content: center;
+            
+        }
+        .comparisionTable img{
+            width: 400px;
+            height: 300px;
+            
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            
+        }
+        .comparisionTable {
+            border: 2px solid black;
+            border-spacing: 20px; 
+        }
+    </style>
 </head>
 <body>
     <nav>
+        <!-- navigation bar -->
         <table id = "navigation">
             <td><a href = "../index.html" class = "unselected"> Home</a></td>
             <td><a href = "products.html" class = "unselected" > Products</a></td>
@@ -16,6 +44,29 @@
             <td><a href = "#" class = "selected"> Research</a></td>
             <td><a href = "aboutus.html" class = "unselected"> About us</a></td>
         </table>
+
+
+        <div class = "researchContainer">
+            <h1>Research</h1>
+
+        </div>
+        <h1>for Products Page</h1>
+        <!-- container for content -->
+        <div class = "researchContainer">
+            
+
+            <table class = "comparisionTable">
+                <tr>
+                    <!-- clickable links for in detailed comparision -->
+                    <td><a href="products.html"><img src="../assets/products_page.png" ></a></td>
+                    <td><a href="https://www.daraz.com.np/#?"><img src="../assets/daraz.png"></a></td>
+                </tr>
+            </table>
+            
+        </div>
+    <div class="researchContainer">
+        <h3> description </h3>
+    </div>
     </nav>
 </body>
 </html>
