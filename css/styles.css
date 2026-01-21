@@ -84,7 +84,7 @@ body {
 }
 
 
-/*About us*/
+/*=================About us======================*/
 
 
 
@@ -108,7 +108,7 @@ body {
 
 /* DARK OVERLAY */
 #aboutUs_img::after {
-    content: "";
+    content: "About us";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
