@@ -180,7 +180,8 @@ body {
         }
 
        section {
-            display: grid;
+        /* grid use garna paudena */
+            display: grid;  
     /* This creates 2 equal columns. Items 3 and 4 will automatically move to the next row. */
     grid-template-columns: repeat(2, 1fr); 
     
@@ -244,14 +245,24 @@ body {
             background-color: green;
             transform: scale(1.05);
         }
+        /* reference from blogger.com */
+        footer 
+        {
+            background-color: #DDEACC;
+            padding :60px;
+            text-align: left
+        }
 
-        /* Responsive */
-       @media (max-width: 768px) {
-    section {
-        grid-template-columns: 1fr; 
-            }
+        footer .footerHead 
+        {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: darkslategray;
+        }
 
-            .product-card {
-                max-width: 100%;
-            }
+        footer .footerText 
+        {
+            font-size: 16px;
+            margin: 5px 0;
+            color: dimgray;
         }
