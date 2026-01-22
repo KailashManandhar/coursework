@@ -84,15 +84,19 @@ body {
 }
 
 
-/*=================About us======================*/
+
+
+
+/*===============RAM KRISHNA CODE===================*/
+/*=================== About us =====================*/
 
 
 
 .selected {
-    border-bottom: 2px solid #b6f5c2;
+    border-bottom: 2px solid #000000;
 }
 
-/* ================= HERO IMAGE ================= */
+/* ================== HERO IMAGE ===================*/
 #aboutUs_img {
     position: relative;
     width: 100%;
@@ -108,14 +112,14 @@ body {
 
 /* DARK OVERLAY */
 #aboutUs_img::after {
-    content: "About us";
+    content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0);
 }
 
 
-/* ================= MEMBERS SECTION ================= */
+/* ================= MEMBERS SECTION =================*/
 .members {
     padding: 60px 5%;
     display: grid;
@@ -126,11 +130,11 @@ body {
 
 /* MEMBER CARD */
 .box {
-    background: white;
+    background: rgb(248, 246, 246);
     padding: 20px;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.743); 
     transition: transform 0.3s ease;
 }
 
