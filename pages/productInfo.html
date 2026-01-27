@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
+    <style>
+        .backButton {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .products_slide
+        {
+            display:flex;
+            gap: 20px;
+            background-color: white;
+            margin-left:50px;
+            margin-right:50px;
+        }
+    </style>
 </head>
 <body>
-    <p> product: <span id ="productName"></span></p>
+    <a href="products.html"><button class="backButton">Back</button></a>
+    <!-- <p> product: <span id ="productName"></span></p>
     <p> Price: <span id ="productPrice"></span></p>
-    <img id = "image" src="" alt="">
-
+    <img id = "image" src="" alt=""> -->
+    
+    <div class ="products_slide">
+        <p> this is product slide</p>
+    </div>
     <script>
         const productName = localStorage.getItem('productName');
         const productPrice = localStorage.getItem('productPrice');
