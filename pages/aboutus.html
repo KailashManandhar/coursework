@@ -7,19 +7,13 @@
 
     <title>Document</title> 
     <style>
-        #aboutUs_img {
-            width: 100vw;   /* 100% of the viewport width */
-            height: 40vh;  /* 20% of the viewport height */
-            object-fit: cover; /* This prevents the image from looking stretched */
-            display: block;    /* Removes extra white space at the bottom */
-        }
 
     </style>
 </head>
 <body>
     <nav>
         <table id = "navigation">
-            <td><a href = "../index.html" class = "unselected"> Home</a>
+            <td><a href = "../index.html" class = "unselected"> Home</a></td>
             <td><a href = "products.html" class = "unselected"> Products</a></td>
             <td><a href = "blog.html" class = "unselected"> Blogs</a></td>
             <td><a href = "research.html" class = "unselected"> Research</a></td>
@@ -29,9 +23,10 @@
 
 
     <div>
-        <img src="../assets/IMG_3530 (1).HEIC" class = "banner" >
+        <img src="../assets/IMG_3530.jpg.jpeg" class = "banner" >
     
     </div>
+    <div class="banner-text">About Us</div>
     <p></p>
 
     <div class="members">
@@ -43,23 +38,43 @@
     </div>
 
     <div class="box">
-        <img src="../assets/IMG_3518 (1).HEIC">
+        <img src="../assets/IMG_3518.jpg.jpeg">
         <p><b>Name:</b> Kailash</p>
         <p>Student of IT</p>
     </div>
 
     <div class="box">
-        <img src="../assets/IMG_3522 (1).HEIC">
+        <img src="../assets/IMG_3522.jpg.jpeg">
         <p><b>Name:</b> Rohit</p>
         <p>Student of IT</p>
     </div>
 
     <div class="box">
-        <img src="../assets/IMG_3520 (1).HEIC">
+        <img src="../assets/IMG_3520.jpg.jpeg">
         <p><b>Name:</b> Prabesh</p>
         <p>Student of IT</p>
     </div>
 
 </div>
+<footer>
+       <p class="footerHead"> Eco Mart </p>
+       <p class="footerText" style="text-align: right; padding-right: 50px;"> <button onclick="navigate()">&#8593; navigate up</button></p>
+        <p class="footerText"> <a href="../index.html">Home</a> | <a href="products.html">Products</a> | <a href="blog.html">Blog</a> | <a href="research.html">Research</a> | <a href="#">About Us</a> </p>
+        <p class="footerText"> &#169; 2026 Eco Mart. All rights reserved. </p>
+        
+        <p class="footerText"> Email: info@ecomart.com </p>
+        <p class="footerText"> Phone: 123456789 </p>
+        <p class="footerText"> Address: Green City, Earth </p>
+        <p class="footerText"> Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+    <script>
+        function navigate(){
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
