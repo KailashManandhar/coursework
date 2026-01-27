@@ -198,6 +198,7 @@
     </script>
     <footer>
        <p class="footerHead"> Eco Mart </p>
+       <p class="footerText" style="text-align: right; padding-right: 50px;"> <button onclick="navigate()">&#8593; navigate up</button></p>
         <p class="footerText"> <a href="../index.html">Home</a> | <a href="products.html">Products</a> | <a href="blog.html">Blog</a> | <a href="research.html">Research</a> | <a href="aboutus.html">About Us</a> </p>
         <p class="footerText"> &#169; 2024 Eco Mart. All rights reserved. </p>
         <p class="footerText"> Email: info@ecomart.com </p>
@@ -208,7 +209,12 @@
             <a href="#">Twitter</a>, 
             <a href="#">Instagram</a>
         </p>
-        
+
     </footer>
+    <script>
+        function navigate(){
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
