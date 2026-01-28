@@ -4,7 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Mart</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="stylerohit.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .banner {
+            position: relative;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            padding: 20px 35px;
+            text-align: center;
+        }
+
+        .banner-text h1 {
+            font-size: 32px;
+        }
+
+        .banner-text p {
+            margin-top: 8px;
+            font-size: 17px;
+        }
+
+        .quote-section {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 40px;
+            gap: 25px;
+        }
+
+        .quote-section img {
+            width: 280px;
+            border-radius: 8px;
+        }
+
+        .quote-text {
+            font-size: 19px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 18px;
+        }
+
+        .card-content h2 {
+            color: #2ecc71;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            color: #555;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        footer {
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,57 +130,79 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-text">
+        <div class="banner">
+        <img src="C:\Users\Rohit Basnet\Downloads\c.png">
+        <div class="banner-text">
             <h1>Welcome to Eco Mart</h1>
-            <p class="tagline">Fresh • Organic • Eco-Friendly</p>
-            <p class="quote">
-                “Earth provides enough to satisfy every man's needs,
-                but not every man's greed.”
-            </p>
+            <p>Fresh • Organic • Eco-Friendly</p>
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <img src="C:\Users\Rohit Basnet\Downloads\gandu.jpg">
+        <div class="quote-text">
+            “Earth provides enough to satisfy every man's needs,
+            but not every man's greed.” <br><br>
+            — Mahatma Gandhi
+        </div>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <a href="pages/products.html">
+                <img src="C:\Users\Rohit Basnet\Downloads\gg.jpg">
+                <div class="card-content">
+                    <h2>Our Products</h2>
+                    <p>
+                        This section shows the products available in Eco Mart.
+                        It mainly focuses on organic and eco-friendly items.
+                    </p>
+                </div>
+            </a>
         </div>
 
-        <div class="hero-image">
-            <img src="images/fff.webp" alt="Eco Mart">
+        <div class="card">
+            <a href="pages/blog.html">
+                <img src="C:\Users\Rohit Basnet\Downloads\hhh.avif">
+                <div class="C:\Users\Rohit Basnet\Downloads\hhh.avif">
+                    <h2>Blog</h2>
+                    <p>
+                        The blog contains posts related to green living,
+                        sustainability and daily eco habits.
+                    </p>
+                </div>
+            </a>
         </div>
-    </section>
 
-    <!-- Image Gallery -->
-    <section class="gallery">
-        <div class="gallery-item">
-            <a href="pages/products.html"><img src="assets/jjjj.avif"></a>
+        <div class="card">
+            <a href="pages/research.html">
+                <img src="C:\Users\Rohit Basnet\Downloads\iiii.jpeg">
+                <div class="card-content">
+                    <h2>Research</h2>
+                    <p>
+                        This page includes research about sustainability
+                        and environmental awareness.
+                    </p>
+                </div>
+            </a>
         </div>
-        <div class="gallery-item">
-            <img src="C:\Users\Rohit Basnet\Downloads\iiii.jpeg">
-        </div>
-        <div class="gallery-item">
-            <img src="C:\Users\Rohit Basnet\Downloads\gg.jpg">
-        </div>
-        <div class="gallery-item">
-            <img src="C:\Users\Rohit Basnet\Downloads\hhh.avif">
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-       <p class="footerHead"> Eco Mart </p>
-       <p class="footerText" style="text-align: right; padding-right: 50px;"> <button onclick="navigate()">&#8593; navigate up</button></p>
-        <p class="footerText"> <a href="#">Home</a> | <a href="pages/products.html">Products</a> | <a href="pages/blog.html">Blog</a> | <a href="pages/research.html">Research</a> | <a href="pages/aboutus.html">About Us</a> </p>
-        <p class="footerText"> &#169; 2024 Eco Mart. All rights reserved. </p>
-        <p class="footerText"> Email: info@ecomart.com </p>
-        <p class="footerText"> Phone: 123456789 </p>
-        <p class="footerText"> Address: Green City, Earth </p>
-        <p class="footerText"> Follow us on 
-            <a href="#">Facebook</a>, 
-            <a href="#">Twitter</a>, 
-            <a href="#">Instagram</a>
-        </p>
-        
-    </footer>
-    <script>
-        function navigate(){
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-    </script>
+        <div class="card">
+            <a href="pages/aboutus.html">
+                <img src="C:\Users\Rohit Basnet\Downloads\jjjj.avif">
+                <div class="card-content">
+                    <h2>About Us</h2>
+                    <p>
+                        This section explains what Eco Mart is,
+                        our goals and our responsibility toward nature.
+                    </p>
+                </div>
+            </a>
+        </div>
 
+    </div>
+
+    
 </body>
 </html>
