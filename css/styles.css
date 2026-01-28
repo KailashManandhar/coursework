@@ -288,7 +288,8 @@ body {
         {
             background-color: #DDEACC;
             padding :50px;
-            text-align: left
+            text-align: left;
+            margin-top: 50px;
         }
 
         footer .footerHead 
