@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Mart</title>
-    <link rel="stylesheet" href="stylerohit.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
-        * {
+                    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -20,6 +20,7 @@
 
         .banner {
             position: relative;
+            width: 100%;
         }
 
         .banner img {
@@ -34,7 +35,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-            padding: 20px 35px;
             text-align: center;
         }
 
@@ -50,9 +50,12 @@
         .quote-section {
             display: flex;
             align-items: center;
+            gap: 25px;
             background-color: white;
             padding: 40px;
-            gap: 25px;
+            max-width: 1200px;
+            margin: 40px auto;
+            border-radius: 10px;
         }
 
         .quote-section img {
@@ -70,7 +73,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 25px;
-            padding: 40px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px 40px;
         }
 
         .card {
@@ -78,11 +83,12 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            height: 520px;
         }
 
         .card img {
             width: 100%;
-            height: 320px;
+            height: 300px;
             object-fit: cover;
         }
 
@@ -106,13 +112,7 @@
             color: inherit;
         }
 
-        footer {
-            background-color: #2ecc71;
-            color: white;
-            text-align: center;
-            padding: 14px;
-            font-size: 14px;
-        }
+
     </style>
 </head>
 <body>
@@ -128,10 +128,8 @@
         </table>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
         <div class="banner">
-        <img src="C:\Users\Rohit Basnet\Downloads\c.png">
+        <img src="assets/homepage banner.png">
         <div class="banner-text">
             <h1>Welcome to Eco Mart</h1>
             <p>Fresh • Organic • Eco-Friendly</p>
@@ -139,7 +137,7 @@
     </div>
 
     <div class="quote-section">
-        <img src="C:\Users\Rohit Basnet\Downloads\gandu.jpg">
+        <img src="assets/gandu.jpg">
         <div class="quote-text">
             “Earth provides enough to satisfy every man's needs,
             but not every man's greed.” <br><br>
@@ -151,7 +149,7 @@
 
         <div class="card">
             <a href="pages/products.html">
-                <img src="C:\Users\Rohit Basnet\Downloads\gg.jpg">
+                <img src="assets/homepage products.jpg">
                 <div class="card-content">
                     <h2>Our Products</h2>
                     <p>
@@ -164,8 +162,8 @@
 
         <div class="card">
             <a href="pages/blog.html">
-                <img src="C:\Users\Rohit Basnet\Downloads\hhh.avif">
-                <div class="C:\Users\Rohit Basnet\Downloads\hhh.avif">
+                <img src="assets/homepage blog.avif">
+                <div class="card-content">
                     <h2>Blog</h2>
                     <p>
                         The blog contains posts related to green living,
@@ -177,7 +175,7 @@
 
         <div class="card">
             <a href="pages/research.html">
-                <img src="C:\Users\Rohit Basnet\Downloads\iiii.jpeg">
+                <img src="assets/homepage research.jpg">
                 <div class="card-content">
                     <h2>Research</h2>
                     <p>
@@ -190,7 +188,7 @@
 
         <div class="card">
             <a href="pages/aboutus.html">
-                <img src="C:\Users\Rohit Basnet\Downloads\jjjj.avif">
+                <img src="assets/homepage aboutus.png">
                 <div class="card-content">
                     <h2>About Us</h2>
                     <p>
@@ -202,7 +200,26 @@
         </div>
 
     </div>
-
+        <footer>
+            <p class="footerHead"> Eco Mart </p>
+            <p class="footerText" style="text-align: right; padding-right: 50px;"> <button onclick="navigate()">&#8593; navigate up</button></p>
+            <p class="footerText"> <a href="../index.html">Home</a> | <a href="products.html">Products</a> | <a href="blog.html">Blog</a> | <a href="research.html">Research</a> | <a href="#">About Us</a> </p>
+            <p class="footerText"> &#169; 2026 Eco Mart. All rights reserved. </p>
+        
+            <p class="footerText"> Email: info@ecomart.com </p>
+            <p class="footerText"> Phone: 123456789 </p>
+            <p class="footerText"> Address: Green City, Earth </p>
+            <p class="footerText"> Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+         </footer>
+        <script>
+             function navigate(){
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        </script>
     
 </body>
 </html>
