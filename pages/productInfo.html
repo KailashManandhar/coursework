@@ -3,13 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
+    <style>
+        .backButton {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .product-info {
+            display: flex; 
+            margin-left: 125px;
+            gap:0;
+            margin-bottom: 50px;
+        }
+        
+        .product-image img {
+            border: 1px solid #ccc;
+            height: 415px;
+            width: 400px;
+        }
+        .product-details {
+            
+            background-color:white;
+            padding-right: 300px;
+            padding-left: 30px;
+        }
+        
+        .product-details h1 {
+            margin-bottom: 50px;
+            font-size: 28px;
+            font-weight: bold;
+
+        }
+        .product-details p {
+            font-size: 20px;
+            color: #555;
+        }
+        .OtherSection {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #FAFAFA;
+        }
+        .products_slide
+        {
+            display:flex;
+            gap: 80px;
+            background-color: white;
+            margin-left:50px;
+            margin-right:50px;
+        }
+        .product_name 
+        {
+            color :dimgray ;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+        }
+        .product_price
+        {
+            color: rgba(219, 96, 2, 0.993);
+            font-size: large;
+        }
+        
+    </style>
+   
 </head>
 <body>
-    <p> product: <span id ="productName"></span></p>
-    <p> Price: <span id ="productPrice"></span></p>
-    <img id = "image" src="" alt="">
+    <a href="products.html"><button class="backButton">Back</button></a>
+    <div class="product-info">
+        <!-- product image -->
+        <div class="product-image">
+            <img id="image" src="" alt="Product Image" >
+            
+        </div>
+        <!-- product details -->
+        <div class="product-details">
+            <h1 id="productName">Product Name</h1>
+            <p id="productPrice">Price: 0.00</p>
+            <button style="font-size:20px;" onclick="change(-1)">-</button>
+            <span id="count" style="font-size:20px; margin:0 10px;">1</span>
+            <button style="font-size:20px;" onclick="change(1)">+</button>
 
+            <script>
+            let value = 1;
+
+            function change(n) {
+                value += n;
+                if (value < 1) value = 1;
+                document.getElementById("count").textContent = value;
+            }
+            </script>
+
+            <br>
+            <button style="padding:10px 20px;font-size:16px;cursor:pointer;margin-top:20px;" onclick="buy()">Buy Now</button>
+        </div>
+        <!-- others section -->
+        <div class="OtherSection">
+            <p class="other-text">Delivery Options</p>
+            <ul>
+                <li>Standard Delivery: 3-5 business days</li>
+                <li>Express Delivery: 1-2 business days</li>
+                <li>Free Shipping on orders over Rs50</li>
+            </ul>
+            <p class="other-text">Location</p>
+            <ul>
+                <li>Warehouse: Islington, Earth</li>
+                <li>Store: Eco-mart, Earth</li>
+            </ul>
+            <p class="other-text">Return Policy</p>
+            <ul>
+                <li>30-day return policy</li>
+                <li>Item must be in original condition</li>
+                
+        </div>
+    </div>
+    <!-- more products -->
+    <h2 style="text-align:center; margin-bottom:20px;">Other Products</h2>
+    <div class="products_slide" style="justify-content:center; margin-bottom:100px;">
+        <div class = "productsContainer">
+            <a href = "productInfo.html" onclick="storeProduct('bag', '500')">
+                <img src="../assets/bag.jpg" alt = "bag">
+                <p class = "product_name">bag</p>
+                <p class = "product_price">500 </p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html" onclick="storeProduct('shirt', '600')">
+                <img src="../assets/shirt.jpg" alt = "shirt">
+                <p class = "product_name">shirt</p>
+                <p class = "product_price">600</p>
+            </a>
+        </div>
+        <div class = "productsContainer">
+            <a href = "productInfo.html" onclick="storeProduct('topi', '200')">
+                <img src="../assets/topi.jpg" alt = "topi">
+                <p class = "product_name">topi</p>
+                <p class = "product_price">200</p>
+            </a>
+        </div>
+    </div>
+    <footer>
+       <p class="footerHead"> Eco Mart </p>
+       <p class="footerText" style="text-align: right; padding-right: 50px;"> <button onclick="navigate()">&#8593; navigate up</button></p>
+        <p class="footerText"> <a href="../index.html">Home</a> | <a href="products.html">Products</a> | <a href="blog.html">Blog</a> | <a href="research.html">Research</a> | <a href="aboutus.html">About Us</a> </p>
+        <p class="footerText"> &#169; 2024 Eco Mart. All rights reserved. </p>
+        <p class="footerText"> Email: info@ecomart.com </p>
+        <p class="footerText"> Phone: 123456789 </p>
+        <p class="footerText"> Address: Green City, Earth </p>
+        <p class="footerText"> Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+        
+    </footer>
+    <script>
+        function navigate(){
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
     <script>
         const productName = localStorage.getItem('productName');
         const productPrice = localStorage.getItem('productPrice');
@@ -19,6 +173,16 @@
         let image = document.getElementById("image");
         image.src = "../assets/" + productName +".jpg";
         image.alt = productName;
+
+        function buy() {
+            let count = document.getElementById("count").textContent;
+            let price = parseFloat(productPrice);
+            alert("You have bought " + count + " " + productName + "(s) for a total of " + (price * parseInt(count)) + ".");
+        }
+        function storeProduct(name, price) {
+            localStorage.setItem("productName", name);
+            localStorage.setItem("productPrice", price);
+        }
     </script>
     
 </body>

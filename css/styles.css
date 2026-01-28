@@ -6,8 +6,46 @@ nav {
   background-blend-mode: overlay;  
   padding: 10px 20px;
   gap: 50px;
+  z-index: 1000;
 }
+.productsContainer
+        {
+            width: 225px;
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 40px;
 
+            transition: transform 0.3s ease;
+            
+        }
+
+        .productsContainer:hover {
+            transform: scale(1.1); /* grow 10% on hover */
+        }
+        
+        .productsContainer img
+        {
+            width: 180px;
+            height: 200px;
+            object-fit: cover; 
+            border-radius: 10px;
+            
+        }
+        .productsContainer .product_name 
+        {
+            color :dimgray ;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+        }
+        .productsContainer .product_price
+        {
+            color: rgba(219, 96, 2, 0.993);
+            font-size: large;
+        }
 .unselected {
   color: grey
 }
@@ -25,6 +63,27 @@ a {
 #navigation {
   width: 1000px;
   font-size: large;
+}
+
+.banner {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(60%);   /* 🔥 fade effect */
+}
+
+/* Text on top of image */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 body {
@@ -73,38 +132,28 @@ body {
 }
 
 
-
-
-
-/*===============RAM KRISHNA CODE===================*/
-/*=================== About us =====================*/
-
-
+/*=================About us======================*/
 
 .selected {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #b6f5c2;
 }
 
-/* ================== HERO IMAGE ===================*/
-#aboutUs_img {
+/* ================= HERO IMAGE ================= */
+#aboutUs_img {  
     position: relative;
     width: 100%;
     height: 40vh;
     overflow: hidden;
 }
 
-#aboutUs_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
+/* banner image */
 .banner {
     width: 100%;
-    height: 85vh;
+    height: 85vh;          /* 🔥 85vh → 100% */
     object-fit: cover;
     display: block;
-    filter: brightness(60%);   /* 🔥 fade effect */
+    filter: brightness(60%);
 }
 
 /* Text on top of image */
@@ -122,14 +171,14 @@ body {
 
 /* DARK OVERLAY */
 #aboutUs_img::after {
-    content: "";
+    content: "";   
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 
-/* ================= MEMBERS SECTION =================*/
+/* ================= MEMBERS SECTION ================= */
 .members {
     padding: 60px 5%;
     display: grid;
@@ -140,11 +189,11 @@ body {
 
 /* MEMBER CARD */
 .box {
-    background: rgb(248, 246, 246);
+    background: white;
     padding: 20px;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.743); 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
