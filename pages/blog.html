@@ -3,42 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, It's Me Prabesh</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-    <title>Document</title>
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+
+}
+
+/* Why EcoMart Box */
+.why-ecomart {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f4fff8, #e8f9f0);
+    border-left: 6px solid #2ecc71;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.why-ecomart h2 {
+    font-size: 30px;
+    color: #1e8449;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.why-ecomart p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    text-align: justify;
+}
+
+/* Product Section (Flexbox instead of Grid) */
+section {
+    display: flex;
+    flex-wrap: wrap;           /* Automatically moves to next row */
+    justify-content: space-between;
+    gap: 80px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Product Card */
+.product-card {
+    width: 45%;               /* 2 cards per row */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: darkslategray;
+}
+
+.content p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: dimgray;
+}
+ /* Blog Section */
+        .blog {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Blog Cards */
+        .blog-card {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #2ecc71;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card h2 {
+            color: #1e8449;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .blog-card p {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .blog-card ul, .blog-card ol {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .blog-card ul li, .blog-card ol li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: #f4fff8;
+        }
+
+        /* Conclusion */
+        .conclusion {
+            background: linear-gradient(135deg, #e8f9f0, #f4fff8);
+            text-align: justify;
+            border-left-color: #27ae60;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;           /* 1 card per row on mobile */
+    }
+}
+    </style>
 </head>
 <body>
     <nav>
-        <table id = "navigation">
-            <td><a href = "../index.html" class = "unselected"> Home</a></td>
-            <td><a href = "products.html" class = "unselected" > Products</a></td>
-            <td><a href = "#" class = "selected"> Blogs</a></td>
+        <!-- navigation bar  -->
+        <table id = "navigation"> 
+            <td><a href =  "../index.html" class = "unselected"> Home</a></td>
+            <td><a href = "productInfo.html"  class = "unselected"> Products</a></td>    
+            <td><a href = "#" class = "selected"> Blogs</a></td> 
             <td><a href = "research.html" class = "unselected"> Research</a></td>
             <td><a href = "aboutus.html" class = "unselected"> About us</a></td>
         </table>
     </nav>
-    <!-- start from here  -->
-
-    <!-- welcoming customers -->
+    
    <header>
+    
         <h1>Welcome to the EcoMart Blog</h1>
         <p>Shop Smart • Live Green • Choose Sustainable</p>
     </header>
 
-    <br><br>
-    <!-- about ecomrt -->
-        <h1 style="color: green;">Why Ecomrt ?</h1>
-        <p>Eco Mart offers a wide range of eco-friendly and sustainable products, including organic vegetables, reusable bags, bamboo items, and environmentally conscious clothing. All products are carefully selected to promote a green lifestyle, reduce waste, and support sustainable living. The store focuses on quality, affordability, and convenience, providing customers with a one-stop shop for environmentally responsible choices. With an easy-to-navigate layout and a commitment to ethical sourcing, Eco Mart empowers individuals to make smart, eco-conscious decisions every day.</p>
-        <br><br>
+    <div class="why-ecomart">
+    <h2>Why Ecomart?</h2>
+    <p>
+        Eco Mart offers a wide range of eco-friendly and sustainable products,
+        including organic vegetables, reusable bags, bamboo items, and
+        environmentally conscious clothing. All products are carefully selected
+        to promote a green lifestyle, reduce waste, and support sustainable
+        living. The store focuses on quality, affordability, and convenience,
+        providing customers with a one-stop shop for environmentally responsible
+        choices. With an easy-to-navigate layout and a commitment to ethical
+        sourcing, Eco Mart empowers individuals to make smart, eco-conscious
+        decisions every day.
+    </p>
+</div>
 
     <section class="products">
-        <!-- cards for each blog -->
         <div class="product-card">
             <img src="../assets/spoons.jpeg" alt="Organic Bamboo Products">
             <div class="content">
                 <h3>Organic Bamboo Products</h3>
                 <p>Organis Bamboo Products – eco-friendly, sustainable, and stylish solutions for everyday living.</p>
-                <button>Read more</button>
             </div>
         </div>
 
@@ -47,32 +229,98 @@
             <div class="content">
                 <h3>organic vegetables</h3>
                 <p>Fresh from nature, pure in every bite.</p>
-                <button>Read more</button>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="../assets/bottle.jpeg" alt="eco-friendly clothes">
+            <img src="../assets/shirts.jpg.jpeg" alt="eco-friendly clothes">
             <div class="content">
                 <h3>Ecofriendly clothes</h3>
                 <p>Wear the change, choose comfort and style while protecting our planet.</p>
-                <button>Read more</button>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="../assets/jhola.jpeg" alt="eco-friendly Bags">
+            <img src="../assets/bags.jpeg" alt="eco-friendly Bags">
             <div class="content">
                 <h3>Eco-Friendly Bags</h3>
                 <p>Carry care for the planet, one bag at a time.</p>
-                <button>Read more</button>
             </div>
         </div>
+        <div class="blog">
+    <div class="blog-card">
+        <h2>Information Technology</h2>
+        <p>In today’s world technology has been a very important part of human life, technology plays very important role in our daily life and business in both positive and negative way.</p>
+        <p>E-commerce technology is all about using the internet to buy and sell products. It includes all types of products. This process includes websites, platforms, and mobile apps. This technology has brought significant growth in business and people who buy and sell things online. It is really easy and convenient for many people who do not like to go stores. Altogether, technology helps business work faster, operate more freely, and reach customers worldwide.</p>
+    </div>
+
+    <div class="blog-card highlight">
+        <h2>Good Things about Technology in E-Commerce</h2>
+        <p>With the help of technology customers from different places can easily shop whenever they want through smartphone, laptops, without visiting the physical store which helps to save time and people can easily shop even with their busy schedule. This prove to be great benefit to busy people and anyone who lives in distant places.</p>
+        <p>E commerce business deals with hundred of products all over the world. people are able to sell their products to different cities ,countries starting with the local buyers to large e commerce industry. with the help of technology businesses have grown quickly all over the world.</p>
+        <p>Running an online store can be cheaper than opening a physical shop as it can save your rent, utilities, and labor cost. Shopping on online store also help customer save their travel expenses to visit stores.</p>
+        <p>Technology enables product reviews, chatbots, and helps businesses understand customer preferences and market demand.</p>
+    </div>
+
+    <div class="blog-card">
+        <h2>Dark Sides of Technology in E-Commerce</h2>
+        <p>Shopping online may require personal and financial details which may sometimes lead to cybercrimes like hacking or loss of money. Technical issues like system breakdowns or website crashes can interrupt services. Customers may face product dissatisfaction since they cannot try products before purchasing.</p>
+        <p>E commerce businesses mainly rely on the internet, digital systems. Any technical failure can lead to downfall of the business, As the technology is growing in such a vast way that AI and self service technologies can cause job displacement of humans which may lead to unemployment.</p>
+        <p>Access use of technology has also increased more number of crimes like fake websites, fake products, scams which leads to loose trust of customers in trusting and buying products on online platforms.</p>
+    </div>
+
+    <div class="blog-card highlight">
+        <h2>How Technology Boosts Sales</h2>
+        <ol>
+            <li>Technology enables businesses to market goods online via websites and mobile applications.</li>
+            <li>Digital marketing attracts more customers through social media and online ads, increasing sales.</li>
+            <li>Customers can buy goods quickly and easily through online payment systems.</li>
+            <li>Technology helps businesses understand customer needs using data, information, and feedback.</li>
+            <li>Smart systems and automation save time and enhance sales.</li>
+        </ol>
+    </div>
+
+    <div class="blog-card">
+        <h2>Why Choose Sustainable Products?</h2>
+        <p>Choosing sustainable products means creating better future for you and your loved once . As sustainable products are purely made out of recyclable, biodegradable elements which reduces the use of plastic, cardboard products which stays in land for long period of time and takes long time to recycle which is very harmful for the environment . Use of this products gives us the surety that we are not causing harm to the planet while still enjoying the goods .</p>
+    </div>
+
+    <div class="blog-card highlight">
+        <h2>Sustainable Tips and Tricks</h2>
+        <p>Firstly we must adopt the concept of reduce, reuse, and recycle. Adopting this concept means reducing harm from the environment and creating a better future .Instead of buying products made from different harmful plastics, chemicals etc ,we can try buying products made from recycled materials. Participating in different environmental campaigns , green programs and planting trees which helps improving air quality, reduces heat. Sustainable living is all about simple living, mindful choices. Your small action can make big differences.</p>
+    </div>
+
+    <div class="blog-card">
+        <h2>Interview: Sarah Green, Community Environmental Advocate</h2>
+        <p><strong>Q:</strong> What is it that made you attracted towards a better future of the environment?</p>
+        <p><strong>A:</strong> During my trip to Kathmandu, I saw how plastic waste and pollution affected the city and rivers. I got sick because the air was so polluted. Seeing this serious problem, my inner mind decided to contribute to this problem and save our environment for a better future.</p>
+
+        <p><strong>Q:</strong> How would you encourage people to convert their day-to-day life and environment into a healthy lifestyle?</p>
+        <p><strong>A:</strong> Organize awareness programs in schools and colleges, environmental campaigns, social media awareness, and promote sustainable products like reusable bags and bamboo items instead of plastic.</p>
+
+        <p><strong>Q:</strong> Communities and their contribution to sustainability?</p>
+        <p><strong>A:</strong> Communities hold important power in promoting sustainability. Collaboration accelerates work. Programs like cleaning, tree-planting, and campaigns spread positive impact faster.</p>
+    </div>
+
+    <div class="blog-card highlight">
+        <h2>News and Community Stories</h2>
+        <p>recent study shows The local community has reduce plastic waste with the support of Eco mart and other Eco-conscious companies. This also helps to reduce pollution in the community as most of the shops and households are substituting plastic bags with Eco-friendly paper bags.</p>
+        <p>One of the highlights of such an effort is student scheme. A local student has come up with a new products based on bamboo production and sells reusable straws, baskets, cutting boards, and also decor like blinds, mats etc. These bamboo products are low in cost,biodegradable, and gives practical replacement for plastic products</p>
+        <p>The study also shows that consumers who prefer Eco-friendly products helps to reduce pollution and environmental damage while also supporting local businesses and ethical production. In addition, a local garden initiative has brought the community together. because of this initiative all the Residents and students working side by side to grow organic vegetables and plants.</p>
+        <p>This show how a small action, when taken together, can lead to a pollution free environment and healthier community.</p>
+    </div>
+
+    <div class="blog-card conclusion">
+        <h2>Conclusion</h2>
+        <p>Technology has brought a huge revolution in e-commerce. It makes businesses faster, easier, and more accessible. It improves customer service, supports innovation, and expands reach. However, it also raises issues like cybersecurity threats, job loss, online scams, and ethical concerns. To mitigate these, businesses must focus on security and smooth customer satisfaction.</p>
+    </div>
+</div>
+
     </section>
     <footer>
        <p class="footerHead"> Eco Mart </p>
        <p class="footerText" style="text-align: right; padding-right: 50px;"> <button onclick="navigate()">&#8593; navigate up</button></p>
-        <p class="footerText"> <a href="../index.html">Home</a> | <a href="products.html">Products</a> | <a href="#">Blog</a> | <a href="research.html">Research</a> | <a href="aboutus.html">About Us</a> </p>
+        <p class="footerText"> <a href="../index.html">Home</a> | <a href="products.html">Products</a> | <a href="blog.html">Blog</a> | <a href="research.html">Research</a> | <a href="aboutus.html">About Us</a> </p>
         <p class="footerText"> &#169; 2024 Eco Mart. All rights reserved. </p>
         <p class="footerText"> Email: info@ecomart.com </p>
         <p class="footerText"> Phone: 123456789 </p>
@@ -82,7 +330,7 @@
             <a href="#">Twitter</a>, 
             <a href="#">Instagram</a>
         </p>
-        
+
     </footer>
     <script>
         function navigate(){
@@ -91,4 +339,3 @@
     </script>
 </body>
 </html>
-    
